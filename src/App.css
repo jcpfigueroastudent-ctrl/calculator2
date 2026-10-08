@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* Outer Card Container */
+.Calculator {
+  width: 320px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Display Screen */
+.CalcDisplay {
+  background-color: #1e293b;
+  color: #ffffff;
+  height: 60px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: auto;
+}
+
+/* Grid Layout */
+.CalcButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Normal Buttons */
+.CalcButton {
+  height: 52px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.CalcButton:hover {
+  background-color: #e2e8f0;
+}
+
+.CalcButton:active {
+  background-color: #cbd5e1;
+}
+
+/* Clear Button */
+.ClearButton {
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.ClearButton:hover {
+  background-color: #dc2626;
+}
+
+.ClearButton:active {
+  background-color: #b91c1c;
+}
